@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EmployeeMangementSystem</title>
+</head>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      
   
+<style>
 
-
-<!-- style -->
-    <style>
-        .card-registration{
+.card-registration{
             width: 45%;
             text-align: center;
             margin: auto;
@@ -27,7 +30,6 @@
          display: inline-block;
         text-align: -webkit-center !important;
         }
-
         label {
             display: flex;
             flex-direction: row;
@@ -43,14 +45,8 @@
             flex: 0 0 50px;
             margin-left: 60px;
             }
-    </style>
-
-<script type="text/javascript" src="Registration.js"></script>
-</head>
+</style>
 <body>
-  
-
- <?php require_once 'Process.php'?>
 
 <!-- My navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -61,36 +57,34 @@
                 </button>
               </nav>
 
-          
               <div class="card card-registration card text-white bg-dark mb-3">
                   <br>
                   <!-- Registeration form -->
-                  <h1 >Register New Employee</h1>
+                  <h1 >Employee Information Update</h1>
                   <br>
                   <form class="form" action="" method="POST" style="text-align:center">
                       <label>
-                        First Name: <input type="text" name="First_Name" id="First_Name" >
+                        First Name: <input type="text" name="First_Name" id="First_Name" value="<?php echo $row['First_Name'];?>" >
                       </label>
                       <label>
-                        Last Name: <input type="text" name="Last_Name" id="Last_Name" >
+                        Last Name: <input type="text" name="Last_Name" id="Last_Name" value="<?php echo $row['Last_Name'];?>" > 
                        </label>
                     <label>
-                      Email Addresss:<input type="text" name="Email_Address" id="Email_Address" >
+                      Email Addresss:<input type="text" name="Email_Address" id="Email_Address" value="<?php echo $row['Email_Address'];?>" >
                     </label>
                      <label>
-                      Date of Birth:<input type="text" name="Date_of_Birth" id="Date_of_Birth" >
+                      Date of Birth:<input type="text" name="Date_of_Birth" id="Date_of_Birth" value="<?php echo $row['Date_of_Birth'];?>" >
                     </label>
                       <label>
-                       Phone Number:<input type="text" name="Phone_Number" id="Phone_Number"  >
+                       Phone Number:<input type="text" name="Phone_Number" id="Phone_Number" value="<?php echo $row['Phone_Number'];?>"  >
                     </label>
                       <label>
-                      Job Title:<input type="text" name="Job_Title" id="Job_Title" >
+                      Job Title:<input type="text" name="Job_Title" id="Job_Title" value="<?php echo $row['Job_Title'];?>">
                     </label>
                        <label>
-                       Hired Date:<input type="text" name="Hired_Date" id="Hired_Date" >
+                       Hired Date:<input type="text" name="Hired_Date" id="Hired_Date" value="<?php echo $row['First_Name'];?>" >
                     </label>
-
-                        <label>
+                    <label>
                          Gender:
                             <select  name="optionSelected">
                             <option value="Gender">Gender</option>
@@ -98,12 +92,12 @@
                             <option value="Male" id="Male">Male</option>
                         </select>
                         </label>
-                      
+                               
                        <br>
                        <br>
                        <!-- button -->
                        <label>
-                       <button name="Register" id="Register" >Register</button>
+                       <button name="update" id="update" >Update</button>
                     </label>
                   </form>
               </div>
@@ -112,11 +106,8 @@
 
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 </body>
-</html>   
-
-   
+</html>

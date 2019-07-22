@@ -12,19 +12,14 @@
 <style>
 
 table, th, td {
- 
-  padding: 15px;
-  margin: auto;
-  text-align:center;
-  
 
 }
 
 div{
     float:top;
-    padding-left:84%;
+    <padding-left:84>%;
 
-    
+
 }
 .h2{
     padding-left:2%
@@ -38,25 +33,10 @@ div{
 
 </style>
 </head>
-<body>
-
+<body style="margin:10px;"> 
+<?php require_once 'connection.php'?>
    <?php 
-       $servername = 'localhost';
-       $username = 'root';
-       $password = '';
-       $database_name = 'EmployeeManagementSystemdb';
-      
-       //create connection 
-       $conn = new mysqli ($servername ,$username,$password ,$database_name );
-      
-      // Check connection
-      if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-      } 
-      echo "Connected successfully";
-
-      $result = $conn->query("SELECT * From registration") or die ($conn->error);
-   
+   $result = $conn->query("SELECT * From registration") or die ($conn->error);
    ?>
 
       <!-- My navbar -->
@@ -67,7 +47,7 @@ div{
                           <button type="button" class="btn btn-outline-success">Search</button> 
                         </form>
                       </nav>
-
+                     
                       <br>
                       <td><button type="button" class="btn btn-outline-secondary"><a href="Registration.php">Add Employee</a></button></td>
                       <h2 class="h2" >All Employees</h2> 
@@ -90,8 +70,8 @@ div{
                     <th></th>
                     
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    
+                 
 
                 
                 
@@ -113,15 +93,15 @@ div{
                     <td><?php echo $row['Hired_Date'];?></td>
                     <td><?php echo $row['Gender'];?></td>
               
-                   <td>
-                    <td><a href = "process.php?Delete=<?php echo $row['registration_id']; ?>" 
-                    class="btn btn-danger">Delete</a></td>
-                    <td><a href = "Registration.php?Update=<?php echo $row['registration_id'];?>"
-                    class="btn btn-success">Update</a></td>
+                   
+                    <td><a href = "Delete.php?registration_id=<?php echo $row['registration_id']; ?>" 
+                    class="btn btn-outline-danger" name="Del">Delete</a></td>
+                    <td><a href = "update.php?Update=<?php echo $row['registration_id'];?>"
+                    class="btn btn-outline-success">Update</a></td>
                     
-                  <td></td>
+                  
 
-                  </td>
+                 
             </tr>
              <?php endwhile; ?>
 
