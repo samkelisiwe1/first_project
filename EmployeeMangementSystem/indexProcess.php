@@ -30,8 +30,8 @@ else{
     header("Location:HomePage.php");
     exit();
   } else{
-    header("Location:index.php");
-    exit();
+    echo "<script>alert('Incorrect Password');location.href='index.php';</script>";
+  
   }
 }
  

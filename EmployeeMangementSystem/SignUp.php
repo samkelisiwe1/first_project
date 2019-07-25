@@ -27,6 +27,7 @@
 
 </head>
 <body>
+
 <?php require_once 'SignUpProcess.php'?>
 <!-- My navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,40 +39,43 @@
   <div class="card card-signup card text-white bg-dark mb-3">
   <h1 >New User</h1>
   
-  <form>
-    <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputName" name="First_Name" >First Name</label>
-      <input type="text" class="form-control" id="First_Name" placeholder="First Name">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputL_Name" name="Last_Name">Last Name</label>
-      <input type="text" class="form-control" id="Last_Name" placeholder="Last Name">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress" name="Email_Address">Email Address</label>
-    <input type="text" class="form-control" id="Email_Address" placeholder="example@gmail.com">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2" name="Confirm_Email_Address">Confirm Email Address</label>
-    <input type="text" class="form-control" id="Confirm_Email_Address" placeholder="example@gmail.com">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity" name="Create_Password">Create Password</label>
-      <input type="password" class="form-control" id="Create_Password" placeholder="1234">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputCity" name="Confirm_Password">Confirm Password</label>
-      <input type="password" class="form-control" id="Confirm_Password" placeholder="1234">
+    <form method="POST" action=" ">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+        <label for="inputFirst_Name">First Name</label>
+          <input type="text" class="form-control" name="First_Name"  id="First_Name" placeholder="First Name">
+        </div>
+
+        <div class="form-group col-md-6">
+        <label for="inputLast_Name">Last Name</label>
+          <input type="text" class="form-control" name="Last_Name" id="Last_Name" placeholder="Last Name">
+        </div>
+      </div>
+      
+    <div class="form-group">
+    <label for="inputEmail_Address">Email Address</label>
+      <input type="text" class="form-control" name="Email_Address" id="Email_Address" placeholder="example@gmail.com">
     </div>
     
-  </div>
-  <div class="form-group">
-  </div>
-  <button type="submit"  name="SignUp"class="btn btn-outline-primary">Sign Up</button>
-</form>
+    <div class="form-group">
+    <label for="inputConfirm_Email_Address">Confirm Email Address</label>
+      <input type="text" class="form-control" name="Confirm_Email_Address" id="Confirm_Email_Address" placeholder="example@gmail.com">
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group col-md-6">
+      <label for="inputFirst_Name">First Name</label>
+        <input type="password" class="form-control" name="Create_Password" id="Create_Password" placeholder="1234">
+      </div>
+
+      <div class="form-group col-md-6">
+      <label for="inputCreate_Password">Create Password</label>
+        <input type="password" class="form-control" name="Confirm_Password" id="Confirm_Password" placeholder="1234">
+      </div>
+    </div>
+    
+    <button type="submit"  id="SignUp" name="SignUp" class="btn btn-outline-primary">Sign Up</button>
+  </form>
 </div>
     
 

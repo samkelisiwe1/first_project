@@ -30,6 +30,12 @@ div{
   margin-right:5px;
 
 }
+.btn-outline-warning{
+
+  float:right;
+  margin-right:5px;
+
+}
 
 </style>
 </head>
@@ -44,10 +50,9 @@ div{
                         <a class="navbar-brand" href="#">Digital Academy</a>
                         <form class="form-inline">
                           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                          <button type="button" class="btn btn-outline-success">Search</button> 
+                          <button type="button" class="btn btn-outline-success">Search</button>
                         </form>
                       </nav>
-                     
                       <br>
                       <td><button type="button" class="btn btn-outline-secondary"><a href="Registration.php">Add Employee</a></button></td>
                       <h2 class="h2" >All Employees</h2> 
@@ -71,11 +76,7 @@ div{
                     
                     <td></td>
                     
-                 
-
-                
-                
-
+                    
             </tr>
           <!-- selecting data from database(EmployeeManagementSystem)-->
             
@@ -95,9 +96,9 @@ div{
               
                    
                     <td><a href = "Delete.php?registration_id=<?php echo $row['registration_id']; ?>" 
-                    class="btn btn-outline-danger" name="Del">Delete</a></td>
-                    <td><a href = "update.php?Update=<?php echo $row['registration_id'];?>"
-                    class="btn btn-outline-success">Update</a></td>
+                    class="btn btn-outline-danger" name="Delete">Delete</a></td>
+                    <td><a href = "update.php?registration_id=<?php echo $row['registration_id'];?>"
+                    class="btn btn-outline-success" name="Update">Update</a></td>
                     
                   
 
@@ -108,6 +109,10 @@ div{
 
             </div>
       </table>
+      
+                    
+      <button type="button" class="btn btn-outline-warning"><a href="LogOut.php">Log Out</a></button>
+                     
                   
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
