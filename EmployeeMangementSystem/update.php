@@ -51,6 +51,7 @@ while($row = mysqli_fetch_array($result))
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,7 +117,7 @@ while($row = mysqli_fetch_array($result))
                   <h1 >  Information Update</h1>
                   <br>
                   <br>
-                  <a href="HomePage.php">Home</a>
+                 
                   <br>
                   <form class="form" action="update.php" method="POST" style="text-align:center">
                       <label>
@@ -153,9 +154,11 @@ while($row = mysqli_fetch_array($result))
                        <br>
                        <br>
                        <!-- button -->
-                       <label>
-                       <button name="update" id="update" >Update</button>
-                    </label>
+
+                       <tr>
+                       <td><input type="hidden" name="registration_id" value=<?php echo $_GET['registration_id'];?>></td>
+                       <td><input type="submit" name="update" value="Update"></td>
+                       </tr>
                   </form>
               </div>
 

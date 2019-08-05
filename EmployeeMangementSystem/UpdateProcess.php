@@ -2,9 +2,6 @@
 
 include_once 'connection.php';
 
-//include_once 'Update.php';
-
-
 if(isset($_POST['Update'])){
 
 $id=$_POST['registration_id'];

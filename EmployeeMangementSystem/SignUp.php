@@ -57,19 +57,15 @@
       <input type="text" class="form-control" name="Email_Address" id="Email_Address" placeholder="example@gmail.com">
     </div>
     
-    <div class="form-group">
-    <label for="inputConfirm_Email_Address">Confirm Email Address</label>
-      <input type="text" class="form-control" name="Confirm_Email_Address" id="Confirm_Email_Address" placeholder="example@gmail.com">
-    </div>
     
     <div class="form-row">
       <div class="form-group col-md-6">
-      <label for="inputFirst_Name">First Name</label>
+      <label for="inputCreate_Password">Create Password</label>
         <input type="password" class="form-control" name="Create_Password" id="Create_Password" placeholder="1234">
       </div>
 
       <div class="form-group col-md-6">
-      <label for="inputCreate_Password">Create Password</label>
+      <label for="inputCreate_Password">Confirm Password</label>
         <input type="password" class="form-control" name="Confirm_Password" id="Confirm_Password" placeholder="1234">
       </div>
     </div>

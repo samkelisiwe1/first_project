@@ -56,8 +56,7 @@ div{
                       <br>
                       <td><button type="button" class="btn btn-outline-secondary"><a href="Registration.php">Add Employee</a></button></td>
                       <h2 class="h2" >All Employees</h2> 
-    
-      <br>
+                <br>
       <!-- Table -->
       <table class="table table-hover">
             
@@ -94,15 +93,11 @@ div{
                     <td><?php echo $row['Hired_Date'];?></td>
                     <td><?php echo $row['Gender'];?></td>
               
-                   
                     <td><a href = "Delete.php?registration_id=<?php echo $row['registration_id']; ?>" 
                     class="btn btn-outline-danger" name="Delete">Delete</a></td>
                     <td><a href = "update.php?registration_id=<?php echo $row['registration_id'];?>"
                     class="btn btn-outline-success" name="Update">Update</a></td>
-                    
-                  
-
-                 
+                      
             </tr>
              <?php endwhile; ?>
 

@@ -48,7 +48,6 @@
 <script type="text/javascript" src="Registration.js"></script>
 </head>
 <body>
-  
 
  <?php require_once 'Process.php'?>
 
