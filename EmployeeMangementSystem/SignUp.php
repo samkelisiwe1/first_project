@@ -43,30 +43,30 @@
       <div class="form-row">
         <div class="form-group col-md-6">
         <label for="inputFirst_Name">First Name</label>
-          <input type="text" class="form-control" name="First_Name"  id="First_Name" placeholder="First Name">
+          <input type="text" class="form-control" name="First_Name"  id="First_Name" placeholder="First Name" require>
         </div>
 
         <div class="form-group col-md-6">
         <label for="inputLast_Name">Last Name</label>
-          <input type="text" class="form-control" name="Last_Name" id="Last_Name" placeholder="Last Name">
+          <input type="text" class="form-control" name="Last_Name" id="Last_Name" placeholder="Last Name"required>
         </div>
       </div>
       
     <div class="form-group">
     <label for="inputEmail_Address">Email Address</label>
-      <input type="text" class="form-control" name="Email_Address" id="Email_Address" placeholder="example@gmail.com">
+      <input type="text" class="form-control" name="Email_Address" id="Email_Address" placeholder="example@gmail.com" required>
     </div>
     
     
     <div class="form-row">
       <div class="form-group col-md-6">
       <label for="inputCreate_Password">Create Password</label>
-        <input type="password" class="form-control" name="Create_Password" id="Create_Password" placeholder="1234">
+        <input type="password" class="form-control" name="Create_Password" id="Create_Password" placeholder="1234" required>
       </div>
 
       <div class="form-group col-md-6">
       <label for="inputCreate_Password">Confirm Password</label>
-        <input type="password" class="form-control" name="Confirm_Password" id="Confirm_Password" placeholder="1234">
+        <input type="password" class="form-control" name="Confirm_Password" id="Confirm_Password" placeholder="1234" required>
       </div>
     </div>
     

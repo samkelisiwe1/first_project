@@ -13,10 +13,9 @@ if(isset($_POST['SignUp'])){
     //checking if passwords & email address match
 
     if ($_POST['Create_Password']!= $_POST['Confirm_Password'])
-    
- {
-    echo"<script>alert('Oops! Password did not match! Try again.');</script>";
-   header("location.href=SignUp.php");
+    {
+        echo"<script>alert('Oops! Password did not match! Try again.');</script>";
+        header("location.href=SignUp.php");
    
     }
     else{

@@ -68,25 +68,25 @@
                   <br>
                   <form class="form" action="" method="POST" style="text-align:center">
                       <label>
-                        First Name: <input type="text" name="First_Name" id="First_Name" >
+                        First Name: <input type="text" name="First_Name" id="First_Name" required >
                       </label>
                       <label>
-                        Last Name: <input type="text" name="Last_Name" id="Last_Name" >
+                        Last Name: <input type="text" name="Last_Name" id="Last_Name" required >
                        </label>
                     <label>
-                      Email Addresss:<input type="text" name="Email_Address" id="Email_Address" >
+                      Email Addresss:<input type="text" name="Email_Address" id="Email_Address" required >
                     </label>
                      <label>
-                      Date of Birth:<input type="text" name="Date_of_Birth" id="Date_of_Birth" >
+                      Date of Birth:<input type="text" name="Date_of_Birth" id="Date_of_Birth" required >
                     </label>
                       <label>
-                       Phone Number:<input type="text" name="Phone_Number" id="Phone_Number"  >
+                       Phone Number:<input type="text" name="Phone_Number" id="Phone_Number" required  >
                     </label>
                       <label>
-                      Job Title:<input type="text" name="Job_Title" id="Job_Title" >
+                      Job Title:<input type="text" name="Job_Title" id="Job_Title" required >
                     </label>
                        <label>
-                       Hired Date:<input type="text" name="Hired_Date" id="Hired_Date" >
+                       Hired Date:<input type="text" name="Hired_Date" id="Hired_Date" required >
                     </label>
 
                         <label>
